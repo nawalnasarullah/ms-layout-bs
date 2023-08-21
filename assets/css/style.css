@@ -1,0 +1,47 @@
+*{
+    --light-black: #262626;
+    --black: #000;
+}
+
+body{
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.nav-wrapper{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.nav-wrapper .navbar-brand {
+    padding-top: 0;
+}
+
+.nav-wrapper .navbar-brand img{
+    height: 20px;
+}
+
+.nav-wrapper .nav-link{
+    color: var(--light-black);
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link::after{
+    content: ""; 
+    position: absolute; 
+    bottom: 20%; 
+    left: 6px; 
+    width: 85%; 
+    height: 1px; 
+    background-color: var(--black); 
+    transform-origin: center center;
+    transform: scaleX(0);   
+  }
+  
+  .nav-link:hover::after {
+    transform: scaleX(1); 
+  }
+
