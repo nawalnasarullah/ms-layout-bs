@@ -37,11 +37,19 @@ body{
     width: 85%; 
     height: 1px; 
     background-color: var(--black); 
-    transform-origin: center center;
     transform: scaleX(0);   
   }
   
-  .nav-link:hover::after {
+  .nav-link:hover::after{
     transform: scaleX(1); 
+  }
+
+  .fa-magnifying-glass{
+    transform: rotate(90deg);
+  }
+
+  .nav-icon{
+    padding: 0 6px;
+    color: var(--black);
   }
 
