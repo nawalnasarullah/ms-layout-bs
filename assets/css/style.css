@@ -35,6 +35,7 @@ body{
     color: var(--light-black);
     padding: 0!important;
     border: 2px var(--white) solid ;
+    display: inline;
 }
 
 .navbar-nav li.nav-item:not(.no-underline) a.nav-link:hover {
@@ -55,7 +56,6 @@ body{
   font-size: 11px;
   font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
   background-color: var(--light-gray);
-  overflow: hidden;
 }
 
 
@@ -87,7 +87,7 @@ body{
   border-bottom: var(--black) solid 1px;
 }
 
-@media  screen and (max-width: 480.98px) {
+@media  screen and (max-width: 991.98px) {
 
   .dropdown-menu li{
     display: block !important;
@@ -97,4 +97,9 @@ body{
     width: 300px;
     border: 0;
   }
+
+  .nav-item{
+    display: block;
+  }
+
 }
