@@ -2,6 +2,7 @@
     --light-black: #262626;
     --black: #000;
     --white: #fff;
+    --light-gray: #f2f2f2;
 }
 
 body{
@@ -12,7 +13,7 @@ body{
 }
 
 .nav-wrapper{
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
 }
 
@@ -40,7 +41,7 @@ body{
   border-bottom: var(--black) solid 2px;
 }
 
-.fa-magnifying-glass{
+.fi-rr-search{
     transform: rotate(90deg);
 }
 
@@ -49,3 +50,51 @@ body{
     color: var(--black);
 }
 
+.dropdown-menu{
+  width: 900px;
+  font-size: 11px;
+  font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: var(--light-gray);
+  overflow: hidden;
+}
+
+
+.dropdown-menu li ul{
+  list-style: none;
+  margin: 0 20px;
+  padding-left: 0;
+  padding: 0 15px;
+}
+
+.dropdown-menu li ul li{
+  padding: 10px 0;
+  width: 80px;
+}
+
+.dropdown-menu li ul li p{
+  color: var(--light-black);
+  font-weight: 600;
+  margin: 0;
+}
+
+.dropdown-menu li ul li a{
+  text-decoration: none;
+  color: var(--light-black);
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.dropdown-menu li ul li a:hover{
+  border-bottom: var(--black) solid 1px;
+}
+
+@media  screen and (max-width: 480.98px) {
+
+  .dropdown-menu li{
+    display: block !important;
+  }
+
+  .dropdown-menu{
+    width: 300px;
+    border: 0;
+  }
+}
