@@ -86,8 +86,10 @@ body{
 .dropdown-menu li ul li a:hover{
   border-bottom: var(--black) solid 1px;
 }
+
 .carousel-indicators{
   bottom: -8px;
+  z-index: 1;
 }
 
 .carousel-indicators [data-bs-target]{
@@ -106,7 +108,9 @@ body{
 .carousel-buttons{
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 22px;
+  position: relative; 
+  z-index: 2;
 }
 
 .carousel-control-prev-icon {
@@ -125,6 +129,7 @@ body{
   position: static;
   display: inline-block;
   width: 120px;
+  z-index: 2;
 }
 
 @media  screen and (max-width: 991.98px) {
