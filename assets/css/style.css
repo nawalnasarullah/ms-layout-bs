@@ -75,6 +75,7 @@ body{
   color: var(--light-black);
   font-weight: 600;
   margin: 0;
+  cursor: pointer;
 }
 
 .dropdown-menu li ul li a{
@@ -93,8 +94,8 @@ body{
 }
 
 .carousel-indicators [data-bs-target]{
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   margin: 0 7px;
   border-radius: 100%;
   border: var(--black) solid;
@@ -115,14 +116,14 @@ body{
 
 .carousel-control-prev-icon {
   background-image: url(../images/left-arrow.png);
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
 }
 
 .carousel-control-next-icon {
   background-image: url(../images/next.png);
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -130,6 +131,19 @@ body{
   display: inline-block;
   width: 120px;
   z-index: 2;
+  background-size: contain; 
+  transition: tranform 0.3s ease;
+  transform: translateZ(0);
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon {
+  transform: translateX(-10px); 
+  -webkit-transform: translate(-10px);
+}
+
+.carousel-control-next:hover .carousel-control-next-icon {
+  transform: translateX(10px); 
+  -webkit-transform: translate(10px);
 }
 
 @media  screen and (max-width: 991.98px) {
