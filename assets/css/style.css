@@ -86,6 +86,46 @@ body{
 .dropdown-menu li ul li a:hover{
   border-bottom: var(--black) solid 1px;
 }
+.carousel-indicators{
+  bottom: -8px;
+}
+
+.carousel-indicators [data-bs-target]{
+  width: 7px;
+  height: 7px;
+  margin: 0 7px;
+  border-radius: 100%;
+  border: var(--black) solid;
+  background-color: transparent;
+}
+
+.carousel-indicators .active{
+  background-color: var(--black);
+}
+
+.carousel-buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../images/left-arrow.png);
+  width: 16px;
+  height: 16px;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../images/next.png);
+  width: 16px;
+  height: 16px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  position: static;
+  display: inline-block;
+  width: 120px;
+}
 
 @media  screen and (max-width: 991.98px) {
 
