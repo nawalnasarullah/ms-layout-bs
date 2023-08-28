@@ -252,6 +252,7 @@ body{
     font-size: 8px;
     width: 200px;
     top: 20%;
+    left: 3%;
     transform: translateY(-50%);
   }
 
@@ -269,3 +270,27 @@ body{
     font-weight: 400;
   }
 }
+
+@media  screen and (min-width: 992px){
+
+  .special-icon-div{
+    opacity: 0;
+  }
+}
+
+@media  screen and (max-width: 992px){
+
+  .special-icon-div{
+    opacity: 1;
+  }
+
+  .special-icon-div .navbar-nav{
+    flex-direction: row!important;
+  }
+
+  .special-icon-div .mb-2{
+    margin-bottom: 0 !important;
+  }
+}
+
+
