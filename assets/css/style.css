@@ -92,14 +92,14 @@ body{
 }
 
 .carousel-indicators{
-  bottom: -8px;
+  bottom: 5px;
   z-index: 1;
 }
 
 .carousel-indicators [data-bs-target]{
   width: 6px;
   height: 6px;
-  margin: 0 7px;
+  margin: 0 5px;
   border-radius: 100%;
   border: var(--black) solid;
   background-color: transparent;
@@ -112,41 +112,32 @@ body{
 .carousel-buttons{
   display: flex;
   justify-content: center;
-  margin-top: 22px;
-  position: relative; 
+  position: relative;
   z-index: 2;
 }
 
-.carousel-control-prev-icon {
-  background-image: url(../images/left-arrow.png);
-  width: 15px;
-  height: 15px;
+
+.carousel-button-left, .carousel-button-right{
+  margin: 10px 30px;
+  background-color: transparent;
+  transition: all ease-in-out .3s;
+  border: 0;
 }
 
-.carousel-control-next-icon {
-  background-image: url(../images/next.png);
-  width: 15px;
-  height: 15px;
+.carousel .carousel-button-left:hover {
+	-webkit-transform: translateX(-10px);
+	transform: translateX(-10px);
 }
 
-.carousel-control-next, .carousel-control-prev {
-  position: static;
-  display: inline-block;
-  width: 120px;
-  z-index: 2;
-  background-size: contain; 
-  transition: tranform 0.3s ease;
-  transform: translateZ(0);
+
+.carousel .carousel-button-right:hover {
+	-webkit-transform: translateX(10px);
+	transform: translateX(10px);
 }
 
-.carousel-control-prev:hover .carousel-control-prev-icon {
-  transform: translateX(-10px); 
-  -webkit-transform: translate(-10px);
-}
-
-.carousel-control-next:hover .carousel-control-next-icon {
-  transform: translateX(10px); 
-  -webkit-transform: translate(10px);
+.carousel-button-left .material-symbols-outlined,
+.carousel-button-right .material-symbols-outlined {
+  font-size: 19px; 
 }
 
 .carousel-item{
@@ -258,9 +249,14 @@ body{
 
 @media  screen and (max-width: 768px){
   .carousel-caption{
+    font-size: 8px;
     width: 200px;
-    top: 10%;
+    top: 20%;
     transform: translateY(-50%);
+  }
+
+  .layout-text h2{
+    font-size: 11px;
   }
 
   .layout-li-first{
