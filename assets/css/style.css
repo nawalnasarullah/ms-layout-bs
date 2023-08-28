@@ -5,6 +5,7 @@
     --light-gray: #f2f2f2;
     --ms-blue: #0067b8;
     --hover-blue: #005a9e;
+    --footer-list-brown: #616161;
 }
 
 body{
@@ -214,7 +215,20 @@ body{
 }
 
 
+.list-group li.list-group-item{
+  font-size: 11px;
+  margin: 4px 0;
+}
 
+.list-group li.list-group-item a{
+  text-decoration: none;
+  color: var(--footer-list-brown);
+  transition: all ease-in-out 0.3s;
+}
+
+.list-group li.list-group-item a:hover{
+  text-decoration: underline solid var(--footer-list-brown);
+}
 
 @media  screen and (max-width: 991.98px) {
 
@@ -247,7 +261,6 @@ body{
     width: 200px;
     top: 10%;
     transform: translateY(-50%);
-    left: 10%;
   }
 
   .layout-li-first{
