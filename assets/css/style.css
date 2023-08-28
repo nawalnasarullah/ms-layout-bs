@@ -3,6 +3,8 @@
     --black: #000;
     --white: #fff;
     --light-gray: #f2f2f2;
+    --ms-blue: #0067b8;
+    --hover-blue: #005a9e;
 }
 
 body{
@@ -146,6 +148,74 @@ body{
   -webkit-transform: translate(10px);
 }
 
+.carousel-item{
+  position: relative;
+  font-size: 12px;
+}
+
+.carousel-caption{
+  position: absolute;
+  width: 400px;
+  height: 150px;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  color: var(--black);
+}
+
+.layout-text{
+  text-align: left;
+}
+
+.layout-text ul{
+  display: flex;
+  padding: 5px 0;
+}
+
+.layout-text ul li{
+  list-style-type: none;
+  -webkit-transition: width 2s, -webkit-transform 2s;
+}
+
+.layout-text ul li.layout-li-first:hover{
+  background-color: var(--hover-blue);
+}
+
+
+.layout-li-first{
+  background-color: var(--ms-blue);
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  font-weight: 500;
+}
+
+.layout-li-second{
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+.layout-text ul li a{
+  text-decoration: none;
+}
+
+.layout-li-first a{
+  color: var(--white);
+}
+
+.layout-li-second a{
+  color: var(--black);
+}
+
+.layout-li-second a:hover{
+  text-decoration: underline;
+  color: var(--black);
+}
+
+
+
+
 @media  screen and (max-width: 991.98px) {
 
   .dropdown-menu li{
@@ -161,4 +231,32 @@ body{
     display: block;
   }
 
+  .carousel-caption{
+    font-size: 11px;
+    width: 300px;
+    height: 70px;
+    top: 30%;
+    transform: translateY(-50%);
+    left: 10%;
+  }
+
+}
+
+@media  screen and (max-width: 768px){
+  .carousel-caption{
+    width: 200px;
+    top: 10%;
+    transform: translateY(-50%);
+    left: 10%;
+  }
+
+  .layout-li-first{
+    padding: 5px 10px;
+    font-weight: 400;
+  }
+  
+  .layout-li-second{
+    padding: 5px 10px;
+    font-weight: 400;
+  }
 }
