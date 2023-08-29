@@ -396,11 +396,15 @@ li.list-group-item h6{
 
 @media  screen and (max-width: 768px){
   .carousel-caption{
-    font-size: 8px;
+    font-size: 10px;
     width: 200px;
     top: 20%;
     left: 3%;
     transform: translateY(-50%);
+  }
+
+  .carousel-caption p{
+    font-size: 8px;
   }
 
 
