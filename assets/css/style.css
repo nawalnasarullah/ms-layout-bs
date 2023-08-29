@@ -28,8 +28,12 @@ body{
     height: 20px;
 }
 
+.ms-logo{
+  padding-bottom: 10px;
+}
+
 .nav-item{
-  margin: 6px;
+  margin: 4px 8px;
   display: flex;
   align-items: center !important ;
 }
@@ -37,7 +41,7 @@ body{
 .nav-wrapper .nav-link{
     color: var(--light-black);
     padding: 0!important;
-    border: 2px var(--white) solid ;
+    border-bottom: 2px var(--white) solid ;
     display: inline;
 }
 
@@ -177,7 +181,7 @@ body{
 
 .layout-li-first{
   background-color: var(--ms-blue);
-  display: inline-block;
+  height: auto;
   padding: 10px 20px;
   border: none;
   font-weight: 500;
@@ -205,9 +209,90 @@ body{
   color: var(--black);
 }
 
+.fa-chevron-right{
+  margin-left: 3px;
+  transition: all ease-in-out 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.layout-li-second:hover .fa-chevron-right{
+  -webkit-transform: translateX(5px);
+	transform: translateX(5px);
+
+}
+
+.card-body{
+  font-size: 12px;
+}
+
+.card-body a h6{
+  font-size: 12px;
+}
+
+.card-body a :hover{
+  text-decoration: underline solid var(--hover-blue);
+}
+
+.card-body a h6:hover .fa-chevron-right{
+  transform: translateX(5px);
+}
+
+.main-img-col{
+  position: relative;
+  font-size: 12px;
+}
+
+
+.layout-text-main{
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  bottom: 50%;
+  transform: translateY(-50%);
+}
+
+.layout-text-main ul{
+  padding: 5px 0;
+}
+
+.layout-text-main ul li{
+  list-style: none;
+  background-color: var(--ms-blue);
+  padding: 10px 20px;
+  border: none;
+  width: 120px;
+  cursor: pointer;
+}
+
+.layout-text-main h2{
+  width: 300px;
+  padding-bottom: 5px;
+}
+
+.layout-text-main ul li a{
+  text-decoration: none;
+  color: var(--white);
+}
+
+.main-img-col ul li{
+  -webkit-transition: width 2s, -webkit-transform 2s;
+}
+
+.main-img-col ul li:hover{
+  background-color: var(--hover-blue);
+}
+
+.social-links{
+  font-size: 13px;
+}
+
+li.list-group-item h6{
+  font-size: 12x;
+}
 
 .list-group li.list-group-item{
-  font-size: 11px;
+  font-size: 10px;
   margin: 4px 0;
 }
 
@@ -220,6 +305,25 @@ body{
 .list-group li.list-group-item a:hover{
   text-decoration: underline solid var(--footer-list-brown);
 }
+
+.footer-social-links{
+  font-size: 10px;
+}
+
+.footer-end-list{
+  margin-bottom: 15px;
+}
+
+.footer-end-list li a{
+  text-decoration: none;
+  color: var(--footer-list-brown);
+  transition: all ease-in-out 0.3s;
+}
+
+.footer-end-list li a:hover{
+  text-decoration: underline solid var(--footer-list-brown);
+}
+
 
 @media  screen and (max-width: 991.98px) {
 
@@ -245,6 +349,49 @@ body{
     left: 10%;
   }
 
+
+  .layout-text-main{
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    bottom: 40%;
+    transform: translateY(-50%);
+  }
+  
+
+  .layout-text h2{
+    font-size: 11px;
+  }
+
+
+  .layout-li-first{
+    padding: 5px 10px;
+    font-weight: 400;
+  }
+  
+  .layout-li-second{
+    padding: 5px 10px;
+    font-weight: 400;
+  }
+
+  .main-img-col{
+    font-size: 10px;
+  }
+
+  .layout-text-main ul li{
+    list-style: none;
+    background-color: var(--ms-blue);
+    padding: 5px 10px;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+  }
+  
+  .layout-text-main h2{
+    width: 300px;
+    padding-bottom: 0;
+  }
+
 }
 
 @media  screen and (max-width: 768px){
@@ -256,40 +403,39 @@ body{
     transform: translateY(-50%);
   }
 
+
+}
+
+@media screen and (max-width: 486px) {
+
+  .layout-text-main h2{
+    width: 300px;
+  }
+
   .layout-text h2{
-    font-size: 11px;
+    font-size: 4px;
+    padding: 0;
   }
 
-  .layout-li-first{
-    padding: 5px 10px;
-    font-weight: 400;
+  .main-img-col{
+    font-size: 5px;
   }
+
+  .layout-text-main ul li{
+    padding: 5px 8px;
+    width: 100px;
+  }
+
+  .layout-text-main ul{
+    padding: 0;
+  }
+
   
-  .layout-li-second{
-    padding: 5px 10px;
-    font-weight: 400;
-  }
 }
 
-@media  screen and (min-width: 992px){
-
-  .special-icon-div{
+@media screen and (max-width: 450px){
+  .layout-text-main{
     opacity: 0;
-  }
-}
-
-@media  screen and (max-width: 992px){
-
-  .special-icon-div{
-    opacity: 1;
-  }
-
-  .special-icon-div .navbar-nav{
-    flex-direction: row!important;
-  }
-
-  .special-icon-div .mb-2{
-    margin-bottom: 0 !important;
   }
 }
 
