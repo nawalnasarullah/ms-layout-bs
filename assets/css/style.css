@@ -354,9 +354,9 @@ li.list-group-item h6{
   }
 
   .carousel-caption ul .layout-li-first{
-    font-size: 10px;
-    width: 110px;
-    height: 25px;
+    font-size: 9px;
+    width: 115px;
+    height: 23px;
   }
 
   .carousel-caption li.layout-li-second{
@@ -375,10 +375,6 @@ li.list-group-item h6{
     transform: translateY(-50%);
   }
   
-
-  .layout-text h2{
-    font-size: 11px;
-  }
 
 
   .layout-li-first{
@@ -463,6 +459,38 @@ li.list-group-item h6{
   .layout-text-main{
     opacity: 0;
   }
+
+  
+  .carousel-caption h2{
+    font-size: 11px;
+  }
+
+  .carousel-caption{
+    font-size: 9px;
+    width: 250px;
+    height: 70px;
+    top: 25%;
+    transform: translateY(-50%);
+    left: 3%;
+  }
+
+  .carousel-caption ul .layout-li-first{
+    font-size: 9px;
+    width: 115px;
+    height: 23px;
+  }
+
+  .carousel-caption li.layout-li-second{
+    font-size: 9px;
+    width: 140px;
+    height: 25px;
+  }
+
+  .carousel-caption p{
+    margin-bottom: 10px;
+  }
+
+
 }
 
 
