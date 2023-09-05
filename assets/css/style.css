@@ -340,6 +340,10 @@ li.list-group-item h6{
     display: block;
   }
 
+  .carousel-caption h2{
+    font-size: 15px;
+  }
+
   .carousel-caption{
     font-size: 11px;
     width: 300px;
@@ -348,6 +352,19 @@ li.list-group-item h6{
     transform: translateY(-50%);
     left: 10%;
   }
+
+  .carousel-caption ul .layout-li-first{
+    font-size: 10px;
+    width: 110px;
+    height: 25px;
+  }
+
+  .carousel-caption li.layout-li-second{
+    font-size: 9px;
+    width: 140px;
+    height: 25px;
+  }
+
 
 
   .layout-text-main{
@@ -395,6 +412,11 @@ li.list-group-item h6{
 }
 
 @media  screen and (max-width: 768px){
+
+  .carousel-caption h2{
+    font-size: 15px;
+  }
+  
   .carousel-caption{
     font-size: 10px;
     width: 200px;
